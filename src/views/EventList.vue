@@ -8,7 +8,7 @@
 <script>
 // @ is an alias to /src
 import EventCard from '@/components/EventCard.vue';
-// import axios from 'axios';
+import axios from 'axios';
 
 export default {
   name: 'EventList',
@@ -17,26 +17,7 @@ export default {
   },
   data() {
     return {
-      events: [
-        {
-          id: 123,
-          title: 'Cat Adoption Day',
-          date: 'January 28, 2022',
-          time: '12:00',
-        },
-        {
-          id: 123,
-          title: 'Cat Adoption Day',
-          date: 'January 28, 2022',
-          time: '12:00',
-        },
-        {
-          id: 123,
-          title: 'Cat Adoption Day',
-          date: 'January 28, 2022',
-          time: '12:00',
-        },
-      ],
+      events: null,
 
     };
   },
